@@ -1,0 +1,121 @@
+/* Fuente general */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Botón de cambio */
+button {
+  width: fit-content;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff5722;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+button:hover {
+  background-color: #e64a19;
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Contenedor principal */
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px; 
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.phrase-card {
+  max-width: 80%; /* Evita que el texto sea muy ancho */
+  background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.phrase-card:hover {
+  transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+.phrase {
+  font-size: 1.6rem; 
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+@keyframes glow {
+  0% { color: #ffc43d; text-shadow: 0 0 5px #ff5722; }
+  25% { color: #ef476f; text-shadow: 0 0 20px #e64a19; }
+  50% { color: #1b9aaa; text-shadow: 0 0 5px #ff5722; }
+  75% { color: #06d6a0; text-shadow: 0 0 20px #e64a19; }
+  100% { color: #f8ffe5; text-shadow: 0 0 5px #ff5722; }
+}
+
+.title-container {
+  background: rgba(0, 0, 0, 0.8); 
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  display: inline-block; 
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 100;
+  animation: glow 2s infinite alternate;
+  color: white; 
+}
