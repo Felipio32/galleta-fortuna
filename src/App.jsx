@@ -24,7 +24,7 @@ const playSound = () => {
   if (!audio.paused) {
     audio.currentTime = 0; // Reinicia el sonido si ya se está reproduciendo
     }
-      audio.volume = 0.3; 
+      audio.volume = 0.2; 
       audio.play(); // Reproduce el sonido
 };
 
